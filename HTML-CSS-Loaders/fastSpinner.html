@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>
+        Fast Spinner
+    </title>
+    <style>
+        .shapeFastSquare{
+            top: 40%;
+            left: 45%;
+            width: 50px;
+            height: 50px;
+            background-color:darksalmon;
+            position: absolute;
+            animation: squareSpin 1s infinite;
+            border-radius: 20%;
+        }
+
+        .shapeFastSquare:hover {
+            background-color:cadetblue;
+        }
+
+        .shapeFastSquare:active {
+            background-color: rebeccapurple;
+        }
+        
+        @keyframes squareSpin{
+            0%{ transform: rotate(0deg);}
+            /* 40%{transform: rotate(300deg); } */
+            /* 60%{ transform: rotate(340deg);} */
+            /* 70%{ transform: rotate(340deg);} */
+            30%{ background-color: cornflowerblue;}
+            70%{ background-color: darksalmon; }
+            80%{ transform: rotate(345deg);}
+            /* 90%{ transform: rotate(360deg);} */
+            100%{ transform: rotate(360deg);}
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="shapeFastSquare" style="top:45%; left: 50%" class="shapeFastSquare"></div>
+</body>
+</html>
