@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>
+        Three Spinners
+    </title>
+    <style>
+        .shapeSquare{
+            width: 60px;
+            height: 60px;
+            background-color:darksalmon;
+            position: absolute;
+            border-radius: 20%;
+        }
+
+        .shapeSquare:hover {
+            background-color:cadetblue;
+        }
+
+        .shapeSquare:active {
+            background-color: rebeccapurple;
+        }
+        
+        #squareOne{
+            animation: squareOneColor 1.5s infinite;
+            animation-delay: 0s, 2s;
+        }
+
+        #squareTwo{
+            animation: squareOneColor 1.51s infinite;
+            animation-delay: 0s, 2s;
+        }
+
+        #squareThree{
+            animation: squareOneColor 1.52s infinite;
+            animation-delay: 0s, 2s;
+        }
+
+        @keyframes squareOneColor{
+            0%{ transform: rotate(0deg);}
+            60%{ background-color: cornflowerblue;}
+            80%{ background-color: darksalmon; }
+            100% {transform: rotate(360deg); }
+        }
+        /* @keyframes squareOneColor{
+            0%{ transform: rotate(0deg);}
+            50%{  background-color: cornflowerblue;}
+            60%{ background-color: darksalmon; }
+            100%{ transform: rotate(360deg);}
+        }
+        @keyframes squareThreeColor{
+            0%{ transform: rotate(0deg);}
+            50%{ background-color: cornflowerblue;}
+            60%{ background-color: darksalmon;}
+            100%{transform: rotate(360deg);  }
+        } */
+
+    </style>
+</head>
+<body>
+    <div id="squareOne" style="top:45%; left: 45%" class="shapeSquare"></div>
+    <div id="squareTwo" style="top:45%; left: 50%" class="shapeSquare"></div>
+    <div id="squareThree" style="top:45%; left: 55%" class="shapeSquare"></div>
+</body>
+</html>
