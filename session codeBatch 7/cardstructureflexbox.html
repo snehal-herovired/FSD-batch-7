@@ -1,0 +1,87 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  
+    align-content:center; 
+     /*if we take center value here then we can see that the card are aligned in the center 
+     wrt flexbox but the card structure is not uniform so we need to take stretch value */
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid rgb(191, 42, 42);
+    box-shadow: 2px 2px 6px 0px  rgba(151, 49, 49, 0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+   #image{
+        width:100%;
+        height:36%;
+    } 
+    
+</style>
+
+<main class="cards">
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWPVEPuguQqq-R-C6pceHhE6kPdWLLM3Xow&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>taj mahal</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, perferendis?</p>
+      <button>read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZNgolpcuqWmjPgIgEInZYU3Oq2i377aSQQ&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>pyramids of egypt</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque..</p>
+      <button>read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYufxcKNxl-K-31OkCNZHv0QLarmcViKsUA&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>great wall of china</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, aspernatur!</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhFAgl43pVYggkxEjBm7Zigi9IV3VeZXlwg&usqp=CAU" alt="Sample photo" id = "image">
+    <div class="text">
+      <h3>Hanging gardens Babylon</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, laborum?</p>
+      <button>Read more...</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxm-OLzTf3c3eHQQw-N0LEIzljuryF-FchRQ&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>lighthouse of alexandra</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, error..</p>
+      <button>Read more..</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxm-OLzTf3c3eHQQw-N0LEIzljuryF-FchRQ&usqp=CAU" alt="Sample photo">
+    <div class="text">
+      <h3>Statue of Zeus at Olympia</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, eum?</p>
+      <button>Read more..</button>
+    </div>
+  </article>
+</main>
