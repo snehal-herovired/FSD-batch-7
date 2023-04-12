@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Company Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Food Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="loginBtn">Login</a></li>
+                <li><a href="#" id="signupBtn">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="loginModal" class="modal">
+        <div class="form-container">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+            <a href="#" class="signup-link">Don't have an account? Signup</a>
+        </div>
+
+    </div>
+    </div>
+    <div id="signupModal" class="modal">
+        <div class="form-container" style="margin-top: 20px;">
+            <h2>Signup</h2>
+            <span class="close">&times;</span>
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <button type="submit">Signup</button>
+            </form>
+            <a href="#" class="form-toggle">Already have an account? Login</a>
+        </div>
+
+    </div>
+    </div>
+    <div id="foodList">
+        <input type="text" id="searchBox" placeholder="Search food item...">
+        <div id="foodCards">
+            <!-- Food cards will be dynamically generated here using JavaScript -->
+        </div>
+    </div>'
+    <div id="tabs">
+        <ul>
+            <li><a href="#" id="dineOutTab">Dine Out</a></li>
+            <li><a href="#" id="dineInTab">Dine In</a></li>
+        </ul>
+    </div>
+    '
+
+    <script src="script.js"></script>
+</body>
+
+</html>
