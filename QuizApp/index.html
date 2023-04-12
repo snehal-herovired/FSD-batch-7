@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer ></script>
+</head>
+<body>
+  <div id="quiz-container">
+    <h1 id="question">Question goes here</h1>
+    <ul id="options" class="options">
+      <li class="option" onclick="checkAnswer(0)">Option 1</li>
+      <li class="option" onclick="checkAnswer(1)">Option 2</li>
+      <li class="option" onclick="checkAnswer(2)">Option 3</li>
+      <li class="option" onclick="checkAnswer(3)">Option 4</li>
+    </ul>
+    <div id="status-container">
+      <p id="status">Question x of y</p>
+      <button id="reload-btn" onclick="reloadQuiz()">Reload Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

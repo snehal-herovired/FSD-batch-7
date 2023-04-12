@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #quiz-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .option {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+  
+  .option:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  #status-container {
+    margin-top: 20px;
+  }
+  
+  #reload-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+  }
+  
