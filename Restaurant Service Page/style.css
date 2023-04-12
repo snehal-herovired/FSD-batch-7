@@ -1,0 +1,222 @@
+/* style.css */
+
+/* Reset default styles */
+body, figure, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.social-media img:hover {
+    opacity: 0.7;
+}
+
+/* Home section styles */
+section#home {
+    text-align: center;
+    padding: 80px;
+    background-color: #fff;
+}
+
+section#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#home p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section#home img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Menu section styles */
+section#menu {
+    padding: 80px;
+    background-color: #f8f8f8;
+}
+
+section#menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 250px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* About section styles */
+section#about {
+    text-align: center;
+    padding: 80px;
+    background-color: #fff;
+}
+
+section#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section#about img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Contact section styles */
+section#contact {
+    padding: 80px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+section#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff5722;
+}
+
+
