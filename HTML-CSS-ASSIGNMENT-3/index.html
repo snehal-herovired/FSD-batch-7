@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Total Calculator</title>
+    <style>
+        /* CSS for invoice table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* CSS for form input */
+        .form-container {
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .form-container input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Invoice Total Calculator</h1>
+
+    <div class="form-container">
+        <form id="invoiceForm">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName">
+
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity">
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price">
+
+            <input type="submit" value="Add Item">
+        </form>
+    </div>
+
+    <table id="invoiceTable">
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </table>
+
+    <h3 id="invoiceTotal">Invoice Total: $0.00</h3>
+
+    <script>
+        const form = document.getElementById('invoiceForm');
+        const table = document.getElementById('invoiceTable');
+        const invoiceTotal = document.getElementById('invoiceTotal');
+
+        let total = 0; // Initialize total to 0
+
+        form.addEventListener('submit', function(event) { // Add event listener for form submit
+            event.preventDefault(); // Prevent form submission
+
+            // Get input values from form
+            const itemName = document.getElementById('itemName').value;
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const price = parseFloat(document.getElementById('price').value);
+            const itemTotal = quantity * price; // Calculate total for the item
+
+            total += itemTotal; // Add item total to the invoice total
+
+            // Add a new row to the table with item details
+            const row = table.insertRow(-1);
+            const itemNameCell = row.insertCell(0);
+            const quantityCell = row.insertCell(1);
+            const priceCell = row.insertCell(2);
+            const itemTotalCell = row.insertCell(3);
+
+            itemNameCell.textContent = itemName;
+            quantityCell.textContent = quantity;
+            priceCell.textContent = '$' + price.toFixed(2);
+            itemTotalCell.textContent = '$' + itemTotal.toFixed(2);
+
+            invoiceTotal.textContent = 'Invoice Total: $' + total.toFixed(2); // Update invoice total
+
+            // Clear form input values
+            document.getElementById('itemName').value = '';
+            document.getElementById('quantity').value = '';
+            document.getElementById('price').value = '';
+        });
+    </script>
+</body
